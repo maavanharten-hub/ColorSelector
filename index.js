@@ -66,6 +66,7 @@ generateBtn.addEventListener("click", function(e) {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text)
+    alert(`${text} copied!`)
 }
 
 getColorScheme()
