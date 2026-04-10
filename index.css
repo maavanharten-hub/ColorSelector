@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.color-picker {
+    height: 2.6rem;
+    width: 3.8rem;
+    padding: 0;
+    border: 0;
+}
+
+.scheme-input, 
+.scheme-input option {
+    width: 19.5rem;
+    height: 2.6rem;
+    background-color: inherit;
+    border-radius: 6px;
+    border: 1px solid #D5D4D8;
+    color: inherit;
+    font-size: 1.1 rem;
+    padding: 0.2rem;
+}
+
+button {
+    background-color: 3D4B60;
+    color: inherit;
+    border-radius: 4px;
+    border: 0;
+}
+
+.color-boxes,
+footer {
+    display: grid;
+}
+
+.color-boxes {
+    height: 500px;
+}
+
+.threeboxes {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fourboxes {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fiveboxes {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+
+}
+
+.code1, .code2, .code3, .code4, .code5,
+.box1, .box2, .box3, .box4, .box5 {
+    cursor: pointer;
+}
+
+.code1:hover, .code2:hover, .code3:hover, .code4:hover, .code5:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+    footer {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-height: 700px) {
+    .color-boxes {
+        height: 300px;
+    }
+}

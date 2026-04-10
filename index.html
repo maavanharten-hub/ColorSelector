@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Color Scheme Generator</h1>
+        <form>
+            <input class="color-picker" type="color" id="color-picker" name="color-picker" value="#8C4D94">
+            <select class="scheme-input" id="scheme-options">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome dark</option>
+                <option value="monochrome-light">Monochrome light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="generate-btn">Get color scheme</button>
+        </form>
+        
+        <section id="color-boxes" class="color-boxes">
+            <div id="box1" class="box1"></div>
+            <div id="box2" class="box2"></div>
+            <div id="box3" class="box3"></div>
+            <div id="box4" class="box4"></div>
+            <div id="box5" class="box5"></div>
+        </section>
+        <footer id="color-codes">
+            <div id="code1" class="code1"></div>
+            <div id="code2" class="code2"></div>
+            <div id="code3" class="code3"></div>
+            <div id="code4" class="code4"></div>
+            <div id="code5" class="code5"></div>
+
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
