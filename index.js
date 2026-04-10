@@ -47,8 +47,8 @@ function getColorScheme() {
                 box.style.backgroundColor = hex
                 code.innerText = hex
 
-                box.addEventListener("click", () => copyToClipboard(hex))
-                code.addEventListener("click", () => copyToClipboard(hex))
+                box.onclick = () => copyToClipboard(hex)
+                code.onclick = () => copyToClipboard(hex)
             }
 
             
@@ -66,9 +66,6 @@ generateBtn.addEventListener("click", function(e) {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text)
-        .then(() => {
-            alert(`${text} copied!`)
-        })
 }
 
 getColorScheme()
